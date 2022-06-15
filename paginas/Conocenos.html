@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
     <link rel="stylesheet" href="../css/estilos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
@@ -55,16 +56,26 @@
             </p>
         </main>
 
-        <footer class="footer">
-            <div>
-                <a href="../index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
-            </div>
-            <div>
-                <a href="https://wa.me/03513199945"><img src="../imagenes/chat.png" alt="WhatsApp" width="30" />Hace tu
-                    pedido por WhatsApp!</a>
-            </div>
-        </footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div>
+                    <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
+                </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted"><p>&copy; 2022 Nadir Ulmi , Inc</p></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png" height="25" width="25"></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es" target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
+        </ul>
+            </footer>
     </div>
+    </div>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

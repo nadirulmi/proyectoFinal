@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
@@ -30,33 +31,63 @@
         </Header>
         <main class="envios">
             <h1>Envios</h1>
-            <h2>¿Cuál es el costo de envío?</h2>
-            <p>El costo de envío será mostrado en base al total de la compra y la ubicación. En el checkout, en el
-                momento
-                previo a la compra vas a ver el costo total.
-                El costo de envío es a cargo del consumidor.</p>
-
-            <h2>¿Dónde puedo recibir mi pedido?</h2>
-            <p>Realizamos envíos a todo el país.</p>
-
-            <h2>¿Cuánto tarda en llegar el pedido?</h2>
-            <p>El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3
-                y 8
-                días hábiles luego de acreditado el pago para envíos en CABA y para envíos al interior del país es de
-                3 a
-                10 días hábiles.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cuál es el costo de envío?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><code></code>El costo de envío será mostrado en base al total de la compra y la ubicación. En el checkout, en el
+                            momento previo a la compra vas a ver el costo total.
+                            El costo de envío es a cargo del consumidor.</div>
+                    </div>
+                </div>
+            <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Dónde puedo recibir mi pedido?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><code></code>Realizamos envíos a todo el país.</div>
+                    </div>
+                </div>
+            <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿Cuánto tarda en llegar el pedido?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><code></code>El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3
+                            y 8 días hábiles luego de acreditado el pago para envíos en CABA 
+                            y para envíos al interior del país es de 3 a 10 días hábiles.</div>
+                    </div>
+                </div>
+                </div>
         </main>
 
-        <footer class="footer">
-            <div>
-                <a href="../index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
-            </div>
-            <div>
-                <a href="https://wa.me/03513199945"><img src="../imagenes/chat.png" alt="WhatsApp" width="30" />Hace tu
-                    pedido por WhatsApp!</a>
-            </div>
-        </footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div>
+                    <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
+                </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted"><p>&copy; 2022 Nadir Ulmi , Inc</p></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png" height="25" width="25"></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es" target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
+        </ul>
+            </footer>
     </div>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 

@@ -50,10 +50,16 @@
     
 }
 
+.header nav ul li:hover{
+    transform: scale(1.1);
+}
+
 .header nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    transition: 1s;
+    scale: (1.1);
 }
 
 /*--------------MAIN---------------*/
@@ -96,11 +102,10 @@ main{
     height: 300px;
     margin: 40px;
     transition: 1s;
-    scale: (1.1);
 }
 
 .accesorios div img:hover{
-    width: 450px;
+    transform: scale(1.1);
 }
 
 .coleccion h2{
@@ -134,6 +139,10 @@ main{
     margin: 30px;
 }
 
+.tienda h3{
+    font-size: 20px;
+}
+
 .tienda > div{
     width: 100%;
     display: flex;
@@ -150,15 +159,14 @@ main{
     background-color:papayawhip;
     box-shadow: 0 2px 2px black;
     overflow: hidden;
-    margin: 35px;
-    padding: 40px;
+    margin: 40px;
+    padding: 30px;
     text-align: center;
     transition: 1s;
-    scale: (1.1);
 }
 
 .tienda >div>div:hover{
-    width: 400px;
+    transform: scale(1.1);
 }
 
 
@@ -284,6 +292,12 @@ main{
 .footer div a{
     text-decoration: none;
     color: black;
+}
+
+.footer div a img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    
 }
 
 /*---------MEDIA QUERIES------------*/
