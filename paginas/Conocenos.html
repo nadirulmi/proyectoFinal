@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
@@ -14,67 +14,100 @@
 </head>
 
 <body>
-    <div class="grid_container">
-        <header class="header">
-            <!--Encabezado-->
-            <img src="../imagenes/logokira.png" alt="logo" width="120px" />
-            <nav>
-                <ul>
-                    <!--Esto sería la barra principal-->
-                    <li><a href="../index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="../paginas/Tienda.html" title="Tienda">Tienda</a></li>
-                    <li><a href="../paginas/Conocenos.html" title="Conocenos">Conocenos</a></li>
-                    <li><a href="../paginas/Contacto.html" title="Contacto">Contacto</a></li>
-                    <li><a href="../paginas/Envios.html" title="Envios">Envios</a></li>
-                </ul>
-            </nav>
-        </Header>
-        <main class="conocenos">
-            <h1>Conocenos</h1>
-            <!--Acá va la historia de la página-->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec iaculis quam, et dictum massa. In
-                efficitur facilisis elit finibus porttitor. Aliquam porttitor est at nisl rutrum, congue luctus purus
-                tristique. Vestibulum fringilla neque non ipsum ultrices fringilla. Nullam massa urna, hendrerit eget mi
-                nec, lacinia elementum magna. Pellentesque molestie eget leo non ullamcorper. Pellentesque quis nisl nec
-                ipsum dignissim maximus.
-                Aenean molestie felis ac imperdiet tristique. Nunc pellentesque pellentesque enim, at sagittis est.
-                Integer
-                convallis eget odio ac ullamcorper. Aenean finibus massa vel est mattis, vel posuere mauris finibus.
-                Mauris
-                vel velit ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Sed suscipit enim nec hendrerit ornare. Aliquam erat volutpat. Mauris tempor laoreet consequat.
-                Proin euismod sed magna ac congue. Aliquam tempus tristique sapien, a faucibus erat malesuada quis. Sed
-                efficitur fermentum purus non dictum.
-                Curabitur eu nisl tellus. Nullam eleifend elementum arcu id sollicitudin. Phasellus a lectus felis. Duis
-                ipsum purus, fermentum at enim nec, varius posuere lacus. Curabitur sed interdum orci. Aenean feugiat
-                nibh
-                at niblla arcu. Vivamus efficitur facilisis elit finibus porttitor. Aliquam porttitor est at nisl
-                rutrum, congue luctus purus
-                scipit enim nec hendrerit ornare. Aliquam erat volutpat. Mauris tempor laoreet consequat.
-                Proin euismod sed magna ac congue. Aliquam tempus tristique sapien, a faucibus erat malesuada quis. Sed
-                efficitur fermentum pid dui neque.</p>
-            </p>
-        </main>
+    <header class="header">
+        <!--Encabezado-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-rgb(241,222,187)">
+            <img src="../imagenes/logokira.png" alt="logo" />
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/Tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Conocenos.html">Conocenos</a>
+                        </li>
 
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div>
-                    <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Contacto.html" tabindex="-1"
+                                aria-disabled="true">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Envios.html" tabindex="-1"
+                                aria-disabled="true">Envios</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted"><p>&copy; 2022 Nadir Ulmi , Inc</p></span>
+            </div>
+        </nav>
+    </Header>
+    <main class="conocenos">
+        <h1>Conocenos</h1>
+        <!--Acá va la historia de la página-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec iaculis quam, et dictum massa. In
+            efficitur facilisis elit finibus porttitor. Aliquam porttitor est at nisl rutrum, congue luctus purus
+            tristique. Vestibulum fringilla neque non ipsum ultrices fringilla. Nullam massa urna, hendrerit eget mi
+            nec, lacinia elementum magna. Pellentesque molestie eget leo non ullamcorper. Pellentesque quis nisl nec
+            ipsum dignissim maximus.
+            Aenean molestie felis ac imperdiet tristique. Nunc pellentesque pellentesque enim, at sagittis est.
+            Integer
+            convallis eget odio ac ullamcorper. Aenean finibus massa vel est mattis, vel posuere mauris finibus.
+            Mauris
+            vel velit ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+            egestas. Sed suscipit enim nec hendrerit ornare. Aliquam erat volutpat. Mauris tempor laoreet consequat.
+            Proin euismod sed magna ac congue. Aliquam tempus tristique sapien, a faucibus erat malesuada quis. Sed
+            efficitur fermentum purus non dictum.
+            Curabitur eu nisl tellus. Nullam eleifend elementum arcu id sollicitudin. Phasellus a lectus felis. Duis
+            ipsum purus, fermentum at enim nec, varius posuere lacus. Curabitur sed interdum orci. Aenean feugiat
+            nibh
+            at niblla arcu. Vivamus efficitur facilisis elit finibus porttitor. Aliquam porttitor est at nisl
+            rutrum, congue luctus purus
+            scipit enim nec hendrerit ornare. Aliquam erat volutpat. Mauris tempor laoreet consequat.
+            Proin euismod sed magna ac congue. Aliquam tempus tristique sapien, a faucibus erat malesuada quis. Sed
+            efficitur fermentum pid dui neque.</p>
+        </p>
+    </main>
+
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div>
+                <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" /></svg>
+                </a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png"
+                            height="25" width="25"></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es"
+                        target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img
+                            src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
+            </ul>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png" height="25" width="25"></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es" target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
-        </ul>
-            </footer>
-    </div>
-    </div>
+        <span class="text-muted text-center">
+            <p>&copy; 2022 Nadir Ulmi , Inc</p>
+        </span>
+    </footer>
     <script src="../js/bootstrap.js"></script>
 </body>
 

@@ -3301,8 +3301,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-success {
-  color: #198754;
-  border-color: #198754;
+  background-color: #F2D17D;
+  border-color: black;
 }
 .btn-outline-success:hover {
   color: #fff;
@@ -3914,6 +3914,8 @@ textarea.form-control-lg {
 }
 
 .nav {
+  background: rgb(241,222,187);
+  background: linear-gradient(90deg, rgba(241,222,187,1) 0%, rgba(254,249,215,1) 35%, rgba(249,236,200,1) 66%, rgba(255,231,188,1) 100%);
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -7755,6 +7757,7 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: #6c757d !important;
 }
+
 
 .text-black-50 {
   --bs-text-opacity: 1;

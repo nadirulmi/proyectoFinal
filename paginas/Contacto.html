@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
@@ -14,70 +14,111 @@
 </head>
 
 <body>
-    <div class="div container">
-        <header class="header">
-            <!--Encabezado-->
-            <img src="../imagenes/logokira.png" alt="logo" width="120px" />
-            <nav>
-                <ul>
-                    <!--Esto sería la barra principal-->
-                    <li><a href="../index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="../paginas/Tienda.html" title="Tienda">Tienda</a></li>
-                    <li><a href="../paginas/Conocenos.html" title="Conocenos">Conocenos</a></li>
-                    <li><a href="../paginas/Contacto.html" title="Contacto">Contacto</a></li>
-                    <li><a href="../paginas/Envios.html" title="Envios">Envios</a></li>
-                </ul>
-            </nav>
-        </Header>
-        <main>
-            <section class="contacto_uno">
-                <h1>Contacto</h1>
-                <h2>¿Dónde estamos?</h2>
-                <div class="responsive">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.734024867361!2d-64.17322298510378!3d-31.421453381402475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2bd5b9f7247%3A0x969d6a58a37ab46f!2sBah%C3%ADa%20Blanca%20785%2C%20X5004AGI%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1652300772566!5m2!1ses-419!2sar"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                </section>
-            <section class="contacto_dos">
-                <h2>Consultas</h2>
-                <div>
-                    <form>
-                        <!--Formulario para poner el nombre-->
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" />
-                        <!--Formulario para poner el email-->
-                        <label for="email">Email</label>
-                        <input type="text" name="email" />
-                        <!--Formulario para poner la consulta-->
-                        <label for="consultas">Escribe tu consulta</label>
-                        <textarea name="consultas"></textarea>
-                        <input type="submit" value="Enviar consulta" />
+    <header class="header">
+        <!--Encabezado-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-rgb(241,222,187)">
+            <img src="../imagenes/logokira.png" alt="logo" />
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/Tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Conocenos.html">Conocenos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Contacto.html" tabindex="-1"
+                                aria-disabled="true">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../paginas/Envios.html" tabindex="-1"
+                                aria-disabled="true">Envios</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
-            </section>
-        </main>
+            </div>
+        </nav>
+    </Header>
+    <main>
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <div class="columnas">
+                <section>
+                    <h2>¿Dónde estamos?</h2>
+                    <div class="responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.734024867361!2d-64.17322298510378!3d-31.421453381402475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2bd5b9f7247%3A0x969d6a58a37ab46f!2sBah%C3%ADa%20Blanca%20785%2C%20X5004AGI%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1652300772566!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                <section>
+                    <h2>Consultas</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escriba su consulta</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                        <input type="button" class="boton" value="Enviar consulta" />
+                    
+                </section>
+            </div>
+        </section>
 
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div>
-                    <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
-                </div>
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted"><p>&copy; 2022 Nadir Ulmi , Inc</p></span>
+    </main>
+
+
+
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div>
+                <a href="index.html"><img src="../imagenes/logokira.png" alt="logo" width="100" /></a>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" /></svg>
+                </a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png"
+                            height="25" width="25"></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es"
+                        target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img
+                            src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
+            </ul>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="" target="_blank"><img src="../imagenes/facebook.png" height="25" width="25"></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_miss_antropia_/?hl=es" target="_blank"><img src="../imagenes/instagram.png" height="25" width="25"></a></li>
-            <li class="ms-3"><a class="text-muted" href="https://wa.me/03513199945" target="_blank"><img src="../imagenes/whatsapp.png" height="25" width="25"></a></li>
-        </ul>
-            </footer>
-    </div>
-    </div>
+        <span class="text-muted text-center">
+            <p>&copy; 2022 Nadir Ulmi , Inc</p>
+        </span>
+    </footer>
     <script src="../js/bootstrap.js"></script>
 </body>
 
