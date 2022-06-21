@@ -17,11 +17,8 @@
 
 
 /*-----------HEADER/NAV-------------*/
-/*
+
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
     padding: 15px;
     background: rgb(241,222,187);
     background: linear-gradient(90deg, rgba(241,222,187,1) 0%, rgba(254,249,215,1) 35%, rgba(249,236,200,1) 66%, rgba(255,231,188,1) 100%);
@@ -29,39 +26,11 @@
     height: 100%;
     grid-area: header;
 }
-*/
 
 .header img{
     width: 100px;
     margin-left: 15px;
 }
-/*
-.header nav ul{
-    display: flex;
-    margin-top: 15px;
-    list-style-type: none;
-}
-
-.header nav ul li{
-    margin: 15px;
-    padding: 10px 15px;
-    border-style:double;
-    color: black;
-    background-color:bisque;
-    
-}
-
-.header nav ul li:hover{
-    transform: scale(1.1);
-}
-
-.header nav ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    transition: 1s;
-    scale: (1.1);
-}*/
 
 /*--------------MAIN---------------*/
 main{
@@ -171,12 +140,12 @@ main{
 }
 
 
-.tienda > div div img{
+.tienda > div >div img{
     width: 250px;
     height: 300px;
 }
 
-.tienda > div div p{
+.tienda > div >div p{
     margin: 10px;
 }
 
@@ -332,11 +301,11 @@ main{
 }
 
 @media screen and (max-width:651px){
-    .section div iframe{
-        width:400px;
-        height:250px;
+    .contacto h2{
+        margin: 18px;
+        padding: 10px;
+        text-align: center;
     }
-
     .columnas{
         flex-direction: column;
     }
@@ -356,7 +325,7 @@ main{
     }
 
     .tienda h1{
-        font-size: 55px;
+        font-size: 60px;
     }
 
     .tienda h2{
@@ -374,7 +343,7 @@ main{
     }
 
     .conocenos h1{
-        font-size: 55px;
+        font-size: 60px;
     }
 
     .conocenos p{
@@ -382,11 +351,11 @@ main{
     
     }
 
-    .contacto_uno h1{
-        font-size: 55px;
+    .contacto h1{
+        font-size: 60px;
     }
 
-    .contacto_uno h2{
+    .contacto h2{
         font-size: 30px;
     }
 
