@@ -1,0 +1,14 @@
+@import "../base/variables";
+
+.header {
+    padding: 15px;
+    background: $color-principal;
+    background: $segundo-color;
+    width: 100%;
+    height: 100%;
+    grid-area: header;
+    img {
+        width: 100px;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+.contacto{
+    h1{
+        font-size: 80px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton{
+    background-color: #F2D17D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+}
