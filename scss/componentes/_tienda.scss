@@ -1,0 +1,56 @@
+.tienda{
+    h1{
+        text-align: center;
+        font-size: 80px;
+        margin: 30px;
+    }
+    /*EXTEND*/
+    h2{
+        @extend h1;
+        font-size: 40px;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px;
+        margin-bottom: 40px;
+    div{
+        width: 330px;
+        height: 430px;
+        border-radius: 8px;
+        background-color:papayawhip;
+        box-shadow: 0 2px 2px black;
+        overflow: hidden;
+        margin: 25px;
+        padding: 30px;
+        text-align: center;
+        transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    img{
+        width: 250px;
+        height: 300px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        margin: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        background-color: #343a40;
+        box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+    }
+    }
+    }
+}

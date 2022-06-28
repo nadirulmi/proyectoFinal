@@ -5,6 +5,118 @@
   font-family: "EB Garamond", serif, Arial, Helvetica;
 }
 
+@media screen and (max-width: 1230px) {
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 972px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+}
+@media screen and (max-width: 968px) {
+  .contenedor div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 885px) {
+  .header nav ul {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1, .hero .tienda h2, .tienda .hero h2 {
+    font-size: 80px;
+  }
+
+  .tienda h1, .tienda h2 {
+    font-size: 60px;
+  }
+
+  .conocenos h1, .conocenos .tienda h2, .tienda .conocenos h2 {
+    font-size: 60px;
+  }
+
+  .contacto h1, .contacto .tienda h2, .tienda .contacto h2 {
+    font-size: 60px;
+  }
+
+  .envios h1, .envios .tienda h2, .tienda .envios h2 {
+    font-size: 60px;
+  }
+
+  .envios h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 651px) {
+  .contacto h2 {
+    margin: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .columnas {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 509px) {
+  .hero {
+    height: calc(40vh - 50px);
+  }
+  .hero h1, .hero .tienda h2, .tienda .hero h2 {
+    font-size: 60px;
+  }
+
+  .coleccion h2 {
+    font-size: 30px;
+  }
+
+  .tienda h1, .tienda h2 {
+    font-size: 60px;
+  }
+  .tienda h2 {
+    font-size: 30px;
+  }
+  .tienda div div {
+    width: 290px;
+    height: 430px;
+  }
+  .tienda div div img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .conocenos h1, .conocenos .tienda h2, .tienda .conocenos h2 {
+    font-size: 60px;
+  }
+  .conocenos p {
+    font-size: 16px;
+  }
+
+  .contacto h1, .contacto .tienda h2, .tienda .contacto h2 {
+    font-size: 60px;
+  }
+  .contacto h2 {
+    font-size: 30px;
+  }
+
+  .envios h1, .envios .tienda h2, .tienda .envios h2 {
+    font-size: 60px;
+  }
+  .envios h2 {
+    font-size: 30px;
+  }
+  .envios p {
+    font-size: 16px;
+  }
+}
 .header {
   padding: 15px;
   background: rgb(241, 222, 187);
@@ -34,31 +146,49 @@
   align-items: center;
   width: 100%;
   height: calc(100vh - 150px);
-  background: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.542)), url(../imagenes/percheros.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.485), rgba(0, 0, 0, 0.542)), url(../imagenes/percheros-min.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-.hero h1 {
+.hero h1, .hero .tienda h2, .tienda .hero h2 {
   font-size: 90px;
   font-weight: bold;
 }
 
-.accesorios div {
-  display: flex;
+.accesorios{
+  position: relative;
+  display: inline-block;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
-.accesorios div img {
-  width: 400px;
-  height: 300px;
+
+.accesorios .texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 40px;
+}
+.accesorios .centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accesorios img{
+  width: 440px;
+  height: 330px;
   margin: 40px;
   transition: 1s;
 }
-.accesorios div img:hover {
+
+.accesorios img:hover {
   transform: scale(1.1);
 }
 
+/*MIXIN*/
 .coleccion h2 {
   text-align: center;
   font-size: 40px;
@@ -75,15 +205,16 @@
   margin: 40px;
 }
 
-.tienda h1 {
+.tienda {
+  /*EXTEND*/
+}
+.tienda h1, .tienda h2 {
   text-align: center;
   font-size: 80px;
   margin: 30px;
 }
 .tienda h2 {
-  text-align: center;
   font-size: 40px;
-  margin: 30px;
 }
 .tienda div {
   width: 100%;
@@ -100,7 +231,7 @@
   background-color: papayawhip;
   box-shadow: 0 2px 2px black;
   overflow: hidden;
-  margin: 40px;
+  margin: 25px;
   padding: 30px;
   text-align: center;
   transition: 1s;
@@ -121,7 +252,6 @@
 .tienda div div a {
   text-decoration: none;
   color: black;
-  margin: 15px;
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
@@ -131,7 +261,7 @@
   box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
 }
 
-.conocenos h1 {
+.conocenos h1, .conocenos .tienda h2, .tienda .conocenos h2 {
   text-align: center;
   font-size: 80px;
   margin: 15px;
@@ -142,7 +272,7 @@
   text-align: center;
 }
 
-.contacto h1 {
+.contacto h1, .contacto .tienda h2, .tienda .contacto h2 {
   font-size: 80px;
   text-align: center;
   padding: 15px;
@@ -160,7 +290,7 @@
   font-size: 17px;
 }
 
-.envios h1 {
+.envios h1, .envios .tienda h2, .tienda .envios h2 {
   font-size: 80px;
   text-align: center;
   padding: 15px;
@@ -176,6 +306,7 @@
   text-align: center;
 }
 
+/*MAPA*/
 .footer {
   background: rgb(241, 222, 187);
   background: linear-gradient(90deg, rgb(241, 222, 187) 0%, rgb(254, 249, 215) 35%, rgb(249, 236, 200) 66%, rgb(255, 231, 188) 100%);
@@ -193,122 +324,4 @@
 .footer div img:hover {
   transition: 1s;
   transform: scale(1.2);
-}
-
-@media screen and (max-width: 1230px) {
-  .coleccion div img {
-    width: 450px;
-    height: 480px;
-  }
-
-  .columnas {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 972px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-  }
-}
-@media screen and (max-width: 968px) {
-  .accesorios div {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 885px) {
-  .header nav ul {
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 80px;
-  }
-
-  .tienda h1 {
-    font-size: 60px;
-  }
-
-  .conocenos h1 {
-    font-size: 60px;
-  }
-
-  .contacto h1 {
-    font-size: 60px;
-  }
-
-  .envios h1 {
-    font-size: 60px;
-  }
-
-  .envios h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 651px) {
-  .contacto h2 {
-    margin: 18px;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .columnas {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 509px) {
-  .hero {
-    height: calc(40vh - 50px);
-  }
-  .hero h1 {
-    font-size: 60px;
-  }
-
-  .coleccion h2 {
-    font-size: 30px;
-  }
-
-  .tienda h1 {
-    font-size: 60px;
-  }
-  .tienda h2 {
-    font-size: 30px;
-  }
-  .tienda div div {
-    width: 290px;
-    height: 430px;
-  }
-  .tienda div div img {
-    width: 200px;
-    height: 250px;
-  }
-
-  .conocenos h1 {
-    font-size: 60px;
-  }
-  .conocenos p {
-    font-size: 16px;
-  }
-
-  .contacto h1 {
-    font-size: 60px;
-  }
-  .contacto h2 {
-    font-size: 30px;
-  }
-
-  .envios h1 {
-    font-size: 60px;
-  }
-  .envios h2 {
-    font-size: 30px;
-  }
-  .envios p {
-    font-size: 16px;
-  }
 }/*# sourceMappingURL=style.css.map */
