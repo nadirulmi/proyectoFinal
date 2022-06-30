@@ -4,11 +4,16 @@
         text-align: center;
         padding: 15px;
     }
-}
-
-.columnas{
-    display: flex;
-    justify-content: space-around;
+    .columnas{
+        display: flex;
+        justify-content: space-around;
+    }
+    .responsive{
+        iframe{
+            width: 560px;
+            height: 360px;
+        }
+    }
 }
 
 .boton{
