@@ -82,7 +82,7 @@
 }
 @media screen and (max-width: 509px) {
   .hero {
-    height: calc(40vh - 50px);
+    height: 300px;
   }
   .hero h1, .hero .tienda h2, .tienda .hero h2 {
     font-size: 60px;
@@ -113,7 +113,7 @@
   }
 
   .conocenos h1, .conocenos .tienda h2, .tienda .conocenos h2 {
-    font-size: 60px;
+    font-size: 45px;
   }
   .conocenos p {
     font-size: 16px;
@@ -251,7 +251,7 @@
 .tienda h2 {
   font-size: 40px;
 }
-.tienda div {
+.tienda > div {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -267,7 +267,7 @@
   box-shadow: 0 2px 2px black;
   overflow: hidden;
   margin: 25px;
-  padding: 30px;
+  padding: 15px;
   text-align: center;
   transition: 1s;
 }

@@ -104,7 +104,7 @@
 
 @media screen and (max-width:509px){
     .hero{
-        height: calc(40vh - 50px);
+        height: 300px;
         h1{
             font-size: $titulo-h1;
         }
@@ -142,7 +142,7 @@
     }
     .conocenos{
         h1{
-            font-size: $titulo-h1;
+            font-size: 45px;
         }
         p{
             font-size: 16px;
