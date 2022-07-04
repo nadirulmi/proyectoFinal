@@ -1,0 +1,183 @@
+@import "../base/variables";
+
+@media screen and (max-width:1230px){
+    .columnas{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:972px){
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+}
+}
+
+@media screen and (max-width:968px){
+    .contacto{
+        .responsive{
+            iframe{
+                width: 450px;
+                height: 250px;
+            }
+        }
+    }
+    .contenedor{
+        div{
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:885px){
+    .header{
+        nav{
+            ul{
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .hero{
+        h1{
+            font-size: 80px;
+        }
+    }
+    .tienda{
+        h1{
+            font-size: $titulo-h1;
+        }
+    }
+    .conocenos{
+        h1{
+            font-size: $titulo-h1;
+        }
+    }
+    .contacto{
+        .responsive{
+            iframe{
+                width: 550px;
+                height: 370px;
+                padding: 15px;
+            }
+        }
+    }
+    .contacto{
+        h1{
+            font-size: $titulo-h1;
+        }
+    }
+    .columnas{
+        flex-direction: column;
+    }
+    .envios{
+        h1{
+            font-size: $titulo-h1;
+        }
+    }
+    .envios{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:651px){
+    .contacto{
+        h2{
+            margin: 18px;
+            padding: 10px;
+            text-align: center;
+        }
+        .responsive{
+            iframe{
+                width: 470px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:509px){
+    .hero{
+        height: 300px;
+        h1{
+            font-size: $titulo-h1;
+        }
+    }
+    .coleccion{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .accesorios{
+        div{
+            img{
+                width: 300px;
+                height: 350px;
+            }
+        }
+    }
+    .tienda{
+        h1{
+            font-size: $titulo-h1;
+        }
+        h2{
+            font-size: 30px;
+        }
+        div{
+            div{
+                width: 290px;
+                height: 430px;
+                img{
+                    width: 200px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+    .conocenos{
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .contacto{
+        h1{
+            font-size: $titulo-h1;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .responsive{
+            iframe{
+                width: 400px;
+                height: 370px;
+            }
+        }
+    }
+    .envios{
+        h1{
+            font-size: $titulo-h1;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 440px){
+    .hero{
+        h1{
+            text-align: center;
+        }
+    }
+}
