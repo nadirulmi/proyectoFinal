@@ -144,6 +144,9 @@
   .hero h1{
     text-align: center;
   }
+  .conocenos h1{
+        font-size: 40px;
+}
 }
 
 .header {
@@ -186,8 +189,7 @@
 }
 
 .accesorios{
-  position: relative;
-  display: inline-block;
+  display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
@@ -197,30 +199,27 @@
   display: flex;
   justify-content:center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.accesorios .texto-encima{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 40px;
-}
-.accesorios .centrado{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.accesorios img{
+.accesorios div div{
   width: 400px;
   height: 300px;
   margin: 40px;
+  background-image: url(/imagenes/kateryna-hliznitsova-vbnxgxj6cJg-unsplash-min.jpg);
+  background-position: center;
+  background-size: cover;
   transition: 1s;
 }
 
-.accesorios img:hover {
+.accesorios div div:hover {
   transform: scale(1.1);
+}
+
+.accesorios div div a{
+  font-size: 40px;
+  color:#FBEFC6;
+  text-decoration: none;
 }
 
 /*MIXIN*/
@@ -260,10 +259,10 @@
   margin-bottom: 40px;
 }
 .tienda div div {
-  width: 330px;
+  width: 300px;
   height: 430px;
   border-radius: 8px;
-  background-color: papayawhip;
+  background-color:antiquewhite;
   box-shadow: 0 2px 2px black;
   overflow: hidden;
   margin: 25px;

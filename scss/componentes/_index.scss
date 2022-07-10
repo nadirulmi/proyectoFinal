@@ -6,30 +6,26 @@
 }
 
 .accesorios{
-    position: relative;
-    display: inline-block;
-    text-align: center;
     div{
         display: flex;
         justify-content:center;
         align-items: center;
-        .texto-encima{
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-        .centrado{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            img{
-                @include proporcion(400px, 300px, 40px );
-                }
+        flex-wrap: wrap;
+            div{
+                width: 400px;
+                height: 300px;
+                margin: 40px;
+                background-image: url(/imagenes/kateryna-hliznitsova-vbnxgxj6cJg-unsplash-min.jpg);
+                background-position: center;
+                background-size: cover;
                 transition: 1s;
-                &:hover {
+                &:hover{
                     transform: scale(1.1);
                 }
+                p{
+                font-size: 40px;
+                color:#FBEFC6;
+            }   
         }
     }
 }
