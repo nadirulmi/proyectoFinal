@@ -111,14 +111,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 15px;
   margin-bottom: 40px;
 }
 .tienda div div {
   width: 300px;
   height: 430px;
   border-radius: 8px;
-  background-color:antiquewhite;
+  background-color:#FEFCEB;
   box-shadow: 0 2px 2px black;
   overflow: hidden;
   margin: 25px;
@@ -228,6 +227,9 @@
   text-decoration: none;
   color: black;
 }
+.footer div a img{
+  margin: 9px;
+}
 .footer div img:hover {
   transition: 1s;
   transform: scale(1.2);
@@ -330,8 +332,8 @@
   }
 
   .accesorios div img{
-    width: 320px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
   }
 
   .tienda h1, .tienda h2 {
@@ -345,8 +347,8 @@
     height: 430px;
   }
   .tienda div div img {
-    width: 200px;
-    height: 250px;
+    width: 220px;
+    height: 260px;
   }
 
   .conocenos h1, .conocenos .tienda h2, .tienda .conocenos h2 {
@@ -386,15 +388,30 @@
     height: 200px;
     margin: 25px;
   }
+  .accesorios div div a{
+    font-size: 30px;
+  }
+  .tienda h1{
+    font-size: 50px;
+  }
   .tienda>div div{
     width: 280px;
     height: 390px;
   }
   .conocenos h1{
-        font-size: 40px;
+    font-size: 50px;
+  }
+  .contacto h1{
+    font-size: 50px;
+  }
+  .contacto h2{
+    font-size: 30px;
   }
   .contacto .responsive iframe{
     width: 400px;
     height: 250px;
+  }
+  .envios h1{
+    font-size: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

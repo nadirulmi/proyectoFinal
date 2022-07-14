@@ -15,11 +15,12 @@ $colores:(
         a{
             text-decoration: none;
             color: black;
-        }
-        img{
-            &:hover{
-                transition: 1s;
-                transform: scale(1.2);
+            img{
+                margin: 9px;
+                &:hover{
+                    transition: 1s;
+                    transform: scale(1.2);
+                }
             }
         }
     }
